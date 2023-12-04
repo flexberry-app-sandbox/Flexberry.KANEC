@@ -1,0 +1,57 @@
+﻿{
+  "applicationCaption": "KANEC",
+  "applicationTitle": "KANEC",
+  "items": [
+    {
+      "link": null,
+      "menuName": "k-a-n-e-c",
+      "caption": "KANEC",
+      "title": "KANEC",
+      "children": [
+        {
+          "link": "i-i-s-k-a-n-e-c-спрос-l",
+          "menuName": null,
+          "caption": "Спрос",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-a-n-e-c-персонал-l",
+          "menuName": null,
+          "caption": "Персонал",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-a-n-e-c-маркетолог-l",
+          "menuName": null,
+          "caption": "Маркетолог",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-a-n-e-c-основ-показат-l",
+          "menuName": null,
+          "caption": "Основ показат",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-a-n-e-c-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-a-n-e-c-целевая-аудит-l",
+          "menuName": null,
+          "caption": "Целевая аудит",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

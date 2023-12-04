@@ -1,0 +1,82 @@
+﻿{
+  "name": "IISKANECМаркетолог",
+  "modelName": "i-i-s-k-a-n-e-c-маркетолог",
+  "className": "Маркетолог",
+  "nameSpace": "IIS.KANEC",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "персонал",
+      "relatedTo": "i-i-s-k-a-n-e-c-персонал",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "МаркетологE",
+      "modelName": "i-i-s-k-a-n-e-c-маркетолог",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Персонал",
+          "name": "персонал",
+          "relatedTo": "i-i-s-k-a-n-e-c-персонал",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "МаркетологL",
+      "modelName": "i-i-s-k-a-n-e-c-маркетолог",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "персонал",
+          "relatedTo": "i-i-s-k-a-n-e-c-персонал",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

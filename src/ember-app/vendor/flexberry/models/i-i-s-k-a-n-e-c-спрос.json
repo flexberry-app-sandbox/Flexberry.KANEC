@@ -1,0 +1,266 @@
+﻿{
+  "name": "IISKANECСпрос",
+  "modelName": "i-i-s-k-a-n-e-c-спрос",
+  "className": "Спрос",
+  "nameSpace": "IIS.KANEC",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "броньЧерСайт",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "занятВМесяц",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "категорНомера",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "скВторНомер",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "скДР",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "скПриДлитПрожив",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "суммСоСкид",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "юридич",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "маркетолог",
+      "relatedTo": "i-i-s-k-a-n-e-c-маркетолог",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СпросE",
+      "modelName": "i-i-s-k-a-n-e-c-спрос",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "категорНомера",
+          "caption": "Категор номера",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "занятВМесяц",
+          "caption": "Занят в месяц",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "юридич",
+          "caption": "Юридич",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "броньЧерСайт",
+          "caption": "Бронь чер сайт",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "скПриДлитПрожив",
+          "caption": "Ск при длит прожив",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "скДР",
+          "caption": "Ск ДР",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "скВторНомер",
+          "caption": "Ск втор номер",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "суммСоСкид",
+          "caption": "Сумм со скид",
+          "hidden": false,
+          "index": 9
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Маркетолог",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 10,
+          "type": "standard",
+          "caption": "Маркетолог",
+          "name": "маркетолог",
+          "relatedTo": "i-i-s-k-a-n-e-c-маркетолог",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СпросL",
+      "modelName": "i-i-s-k-a-n-e-c-спрос",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "категорНомера",
+          "caption": "Категор номера",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "занятВМесяц",
+          "caption": "Занят в месяц",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "юридич",
+          "caption": "Юридич",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "броньЧерСайт",
+          "caption": "Бронь чер сайт",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "скПриДлитПрожив",
+          "caption": "Ск при длит прожив",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "скДР",
+          "caption": "Ск ДР",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "скВторНомер",
+          "caption": "Ск втор номер",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "суммСоСкид",
+          "caption": "Сумм со скид",
+          "hidden": false,
+          "index": 9
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

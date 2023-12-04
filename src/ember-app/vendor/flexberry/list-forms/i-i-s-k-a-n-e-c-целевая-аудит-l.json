@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-a-n-e-c-целевая-аудит-e",
+  "editForm": "i-i-s-k-a-n-e-c-целевая-аудит-e",
+  "external": false,
+  "caption": "Целевая аудит",
+  "name": "IISKANECЦелеваяАудитL",
+  "className": "ЦелеваяАудитL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-a-n-e-c-целевая-аудит",
+      "modelProjection": "ЦелеваяАудитL"
+    }
+  ]
+}

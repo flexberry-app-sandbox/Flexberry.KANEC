@@ -1,0 +1,103 @@
+<h3 class="ui header">{{t "forms.i-i-s-k-a-n-e-c-основ-показат-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.выручкаОбщ
+      class=(if (v-get validationModel "выручкаОбщ" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-основ-показат-e.выручкаОбщ-caption")
+      data-test-i-i-s-k-a-n-e-c-основ-показат-e-выручкаОбщ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "выручкаОбщ" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.заполняемость
+      class=(if (v-get validationModel "заполняемость" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-основ-показат-e.заполняемость-caption")
+      data-test-i-i-s-k-a-n-e-c-основ-показат-e-заполняемость=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "заполняемость" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.срЦена
+      class=(if (v-get validationModel "срЦена" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-основ-показат-e.срЦена-caption")
+      data-test-i-i-s-k-a-n-e-c-основ-показат-e-срЦена=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "срЦена" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.выручЗаОдинН
+      class=(if (v-get validationModel "выручЗаОдинН" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-основ-показат-e.выручЗаОдинН-caption")
+      data-test-i-i-s-k-a-n-e-c-основ-показат-e-выручЗаОдинН=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "выручЗаОдинН" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.выручЗаГостя
+      class=(if (v-get validationModel "выручЗаГостя" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-основ-показат-e.выручЗаГостя-caption")
+      data-test-i-i-s-k-a-n-e-c-основ-показат-e-выручЗаГостя=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "выручЗаГостя" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.срКолвоГостВНо
+      class=(if (v-get validationModel "срКолвоГостВНо" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-основ-показат-e.срКолвоГостВНо-caption")
+      data-test-i-i-s-k-a-n-e-c-основ-показат-e-срКолвоГостВНо=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "срКолвоГостВНо" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-k-a-n-e-c-основ-показат-e.маркетолог-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.маркетолог
+      relationName="маркетолог"
+      projection="МаркетологL"
+      title=(t "forms.i-i-s-k-a-n-e-c-основ-показат-e.маркетолог-caption")
+      readonly=readonly
+      componentName="маркетологLookup"
+      class=(if (v-get validationModel "маркетолог" "isInvalid") "error")
+      data-test-i-i-s-k-a-n-e-c-основ-показат-e-маркетолог=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "маркетолог" "message")}}
+  </div>
+</form>

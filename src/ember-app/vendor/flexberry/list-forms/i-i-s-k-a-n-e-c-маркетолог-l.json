@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-a-n-e-c-маркетолог-e",
+  "editForm": "i-i-s-k-a-n-e-c-маркетолог-e",
+  "external": false,
+  "caption": "Маркетолог",
+  "name": "IISKANECМаркетологL",
+  "className": "МаркетологL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-a-n-e-c-маркетолог",
+      "modelProjection": "МаркетологL"
+    }
+  ]
+}

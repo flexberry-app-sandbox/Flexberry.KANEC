@@ -1,0 +1,182 @@
+﻿{
+  "name": "IISKANECОсновПоказат",
+  "modelName": "i-i-s-k-a-n-e-c-основ-показат",
+  "className": "ОсновПоказат",
+  "nameSpace": "IIS.KANEC",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "выручЗаГостя",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "выручЗаОдинН",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "выручкаОбщ",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "заполняемость",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "срКолвоГостВНо",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "срЦена",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "маркетолог",
+      "relatedTo": "i-i-s-k-a-n-e-c-маркетолог",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОсновПоказатE",
+      "modelName": "i-i-s-k-a-n-e-c-основ-показат",
+      "attrs": [
+        {
+          "name": "выручкаОбщ",
+          "caption": "Выручка общ",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "заполняемость",
+          "caption": "Заполняемость",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "срЦена",
+          "caption": "Ср цена",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "выручЗаОдинН",
+          "caption": "Выруч за один Н",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "выручЗаГостя",
+          "caption": "Выруч за гостя",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "срКолвоГостВНо",
+          "caption": "Ср колво гост в но",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Маркетолог",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 6,
+          "type": "standard",
+          "caption": "Маркетолог",
+          "name": "маркетолог",
+          "relatedTo": "i-i-s-k-a-n-e-c-маркетолог",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ОсновПоказатL",
+      "modelName": "i-i-s-k-a-n-e-c-основ-показат",
+      "attrs": [
+        {
+          "name": "выручкаОбщ",
+          "caption": "Выручка общ",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "заполняемость",
+          "caption": "Заполняемость",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "срЦена",
+          "caption": "Ср цена",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "выручЗаОдинН",
+          "caption": "Выруч за один Н",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "выручЗаГостя",
+          "caption": "Выруч за гостя",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "срКолвоГостВНо",
+          "caption": "Ср колво гост в но",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

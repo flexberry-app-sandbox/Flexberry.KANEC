@@ -1,0 +1,113 @@
+<h3 class="ui header">{{t "forms.i-i-s-k-a-n-e-c-целевая-аудит-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.фИО
+      class=(if (v-get validationModel "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-целевая-аудит-e.фИО-caption")
+      data-test-i-i-s-k-a-n-e-c-целевая-аудит-e-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "фИО" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.датаРожд
+      class=(if (v-get validationModel "датаРожд" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-целевая-аудит-e.датаРожд-caption")
+      data-test-i-i-s-k-a-n-e-c-целевая-аудит-e-датаРожд=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаРожд" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.пол
+      class=(if (v-get validationModel "пол" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-целевая-аудит-e.пол-caption")
+      data-test-i-i-s-k-a-n-e-c-целевая-аудит-e-пол=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "пол" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.возраст
+      class=(if (v-get validationModel "возраст" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-целевая-аудит-e.возраст-caption")
+      data-test-i-i-s-k-a-n-e-c-целевая-аудит-e-возраст=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "возраст" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.национальн
+      class=(if (v-get validationModel "национальн" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-целевая-аудит-e.национальн-caption")
+      data-test-i-i-s-k-a-n-e-c-целевая-аудит-e-национальн=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "национальн" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.семейнПол
+      class=(if (v-get validationModel "семейнПол" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-целевая-аудит-e.семейнПол-caption")
+      data-test-i-i-s-k-a-n-e-c-целевая-аудит-e-семейнПол=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "семейнПол" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.образование
+      class=(if (v-get validationModel "образование" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-a-n-e-c-целевая-аудит-e.образование-caption")
+      data-test-i-i-s-k-a-n-e-c-целевая-аудит-e-образование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "образование" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-k-a-n-e-c-целевая-аудит-e.маркетолог-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.маркетолог
+      relationName="маркетолог"
+      projection="МаркетологL"
+      title=(t "forms.i-i-s-k-a-n-e-c-целевая-аудит-e.маркетолог-caption")
+      readonly=readonly
+      componentName="маркетологLookup"
+      class=(if (v-get validationModel "маркетолог" "isInvalid") "error")
+      data-test-i-i-s-k-a-n-e-c-целевая-аудит-e-маркетолог=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "маркетолог" "message")}}
+  </div>
+</form>

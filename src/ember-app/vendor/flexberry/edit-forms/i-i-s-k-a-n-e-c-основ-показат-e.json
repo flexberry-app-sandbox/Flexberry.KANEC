@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Маркетолог",
+      "projection": "МаркетологL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Основ показат",
+  "name": "IISKANECОсновПоказатE",
+  "className": "ОсновПоказатE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-a-n-e-c-основ-показат",
+      "modelProjection": "ОсновПоказатE"
+    }
+  ]
+}

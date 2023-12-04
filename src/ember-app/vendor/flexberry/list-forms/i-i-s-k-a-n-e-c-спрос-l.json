@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-a-n-e-c-спрос-e",
+  "editForm": "i-i-s-k-a-n-e-c-спрос-e",
+  "external": false,
+  "caption": "Спрос",
+  "name": "IISKANECСпросL",
+  "className": "СпросL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-a-n-e-c-спрос",
+      "modelProjection": "СпросL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-a-n-e-c-основ-показат-e",
+  "editForm": "i-i-s-k-a-n-e-c-основ-показат-e",
+  "external": false,
+  "caption": "Основ показат",
+  "name": "IISKANECОсновПоказатL",
+  "className": "ОсновПоказатL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-a-n-e-c-основ-показат",
+      "modelProjection": "ОсновПоказатL"
+    }
+  ]
+}

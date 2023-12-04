@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-a-n-e-c-должность-e",
+  "editForm": "i-i-s-k-a-n-e-c-должность-e",
+  "external": false,
+  "caption": "Должность",
+  "name": "IISKANECДолжностьL",
+  "className": "ДолжностьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-a-n-e-c-должность",
+      "modelProjection": "ДолжностьL"
+    }
+  ]
+}
