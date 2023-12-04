@@ -22,37 +22,37 @@ export default Controller.extend({
             link: 'i-i-s-k-a-n-e-c-спрос-l',
             caption: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-спрос-l.caption'),
             title: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-спрос-l.title'),
-            icon: 'phone',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-k-a-n-e-c-персонал-l',
             caption: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-персонал-l.caption'),
             title: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-персонал-l.title'),
-            icon: 'folder open',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-k-a-n-e-c-маркетолог-l',
             caption: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-маркетолог-l.caption'),
             title: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-маркетолог-l.title'),
-            icon: 'list',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-k-a-n-e-c-основ-показат-l',
             caption: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-основ-показат-l.caption'),
             title: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-основ-показат-l.title'),
-            icon: 'chart bar',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-k-a-n-e-c-должность-l',
             caption: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-должность-l.caption'),
             title: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-должность-l.title'),
-            icon: 'tags',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-k-a-n-e-c-целевая-аудит-l',
             caption: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-целевая-аудит-l.caption'),
             title: i18n.t('forms.application.sitemap.k-a-n-e-c.i-i-s-k-a-n-e-c-целевая-аудит-l.title'),
-            icon: 'list',
+            icon: 'archive',
             children: null
           }]
         }
